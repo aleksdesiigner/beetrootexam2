@@ -1,0 +1,42 @@
+header {
+  width: 227px;
+  height: 100vh;
+  background: #26282b;
+  float: left;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  margin: 20px 0 0 50px;
+}
+
+#nav-bar .sidenav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 205px;
+  margin-left: 50px;
+  list-style: none;
+  margin-top: 50px;
+}
+
+#nav-bar .sidenav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#nav-bar .sidenav ul li a:hover {
+  color: #ff4a52;
+  font-weight: 500;
+  border-left: 2px solid #ff4a52;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
