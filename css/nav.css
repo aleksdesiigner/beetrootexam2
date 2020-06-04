@@ -9,8 +9,15 @@ header {
 }
 
 #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -19,8 +26,15 @@ header {
 }
 
 #nav-bar .sidenav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 250px;
   margin-left: 50px;
@@ -40,6 +54,8 @@ header {
   font-weight: 500;
   border-left: 2px solid #ff4a52;
   padding: 5px 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -60,6 +76,8 @@ header {
   background: none;
   color: #ff4a52;
   font-weight: 500;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
   border: 1px solid #ff4a52;
 }
