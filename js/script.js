@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".slider").slick({
-    arrows: true,
+    arrows: false,
     dots: true,
     adaptiveHeight: true,
     speed: 1000,
@@ -12,4 +12,24 @@ $(document).ready(function () {
     pauseOnDotsHover: true,
     draggable: false,
   });
+});
+
+// POPUPS
+
+$(".popup-link").click(function () {
+  $(".popup-rec").fadeIn();
+  $(".popup-rec").addClass("disabled");
+});
+
+$("popup-close").click(function () {
+  $(".popup-rec").fadeOut();
+});
+
+$(".btn-add").click(function () {
+  $(".popup-add").fadeIn();
+  $(".popup-add").addClass("disabled");
+});
+
+$("popup-close").click(function () {
+  $(".popup-add").fadeOut();
 });

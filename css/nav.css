@@ -1,8 +1,11 @@
 header {
   width: 227px;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
   background: #26282b;
-  float: left;
+  /* float: left; */
 }
 
 #nav-bar {
@@ -19,24 +22,44 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 205px;
+  height: 250px;
   margin-left: 50px;
   list-style: none;
   margin-top: 50px;
 }
 
-#nav-bar .sidenav ul li a {
+#nav-bar .sidenav ul .nav-link a {
   font-size: 16px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
 }
 
-#nav-bar .sidenav ul li a:hover {
+#nav-bar .sidenav ul .nav-link a:hover {
   color: #ff4a52;
   font-weight: 500;
   border-left: 2px solid #ff4a52;
   padding: 5px 10px;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+.btn-add {
+  background-color: #ff4a52; /* Green */
+  border-radius: 3px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: none;
+  color: #ff4a52;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  border: 1px solid #ff4a52;
 }
